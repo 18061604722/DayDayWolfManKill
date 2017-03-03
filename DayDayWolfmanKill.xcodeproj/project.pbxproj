@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1C95E51E5AD126001DB5E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C95E41E5AD126001DB5E2 /* AppDelegate.swift */; };
+		3F1C95E71E5AD126001DB5E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C95E61E5AD126001DB5E2 /* ViewController.swift */; };
+		3F1C95EA1E5AD126001DB5E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C95E81E5AD126001DB5E2 /* Main.storyboard */; };
+		3F1C95EC1E5AD126001DB5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C95EB1E5AD126001DB5E2 /* Assets.xcassets */; };
+		3F1C95EF1E5AD126001DB5E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C95ED1E5AD126001DB5E2 /* LaunchScreen.storyboard */; };
+		3F1C95FA1E5AD126001DB5E2 /* DayDayWolfmanKillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C95F91E5AD126001DB5E2 /* DayDayWolfmanKillTests.swift */; };
+		3F1C96051E5AD126001DB5E2 /* DayDayWolfmanKillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C96041E5AD126001DB5E2 /* DayDayWolfmanKillUITests.swift */; };
+		3F1C96141E5AD1BF001DB5E2 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C96131E5AD1BF001DB5E2 /* timg.jpeg */; };
+		3F2848E01E5D1E9E00F6917E /* 猎人.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848DB1E5D1E9E00F6917E /* 猎人.jpeg */; };
+		3F2848E11E5D1E9E00F6917E /* 女巫.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848DC1E5D1E9E00F6917E /* 女巫.jpeg */; };
+		3F2848E21E5D1E9E00F6917E /* 平民.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848DD1E5D1E9E00F6917E /* 平民.jpeg */; };
+		3F2848E31E5D1E9E00F6917E /* 守卫.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848DE1E5D1E9E00F6917E /* 守卫.jpeg */; };
+		3F2848E41E5D1E9E00F6917E /* 预言家.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848DF1E5D1E9E00F6917E /* 预言家.jpeg */; };
+		3F2848E61E5D609100F6917E /* 卡背.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848E51E5D609100F6917E /* 卡背.png */; };
+		3F2848EA1E5D620000F6917E /* RolePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848E91E5D620000F6917E /* RolePlist.plist */; };
+		3F2848EC1E5D6A6500F6917E /* RoleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2848EB1E5D6A6500F6917E /* RoleConfiguration.swift */; };
+		3F2848EE1E5D724500F6917E /* 狼人.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F2848ED1E5D724500F6917E /* 狼人.jpeg */; };
+		3FB32CC41E650D8100AB565D /* 红叉.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FB32CC31E650D8100AB565D /* 红叉.jpeg */; };
+		3FB32CC91E65493300AB565D /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB32CC71E65493300AB565D /* GameStartViewController.swift */; };
+		3FB32CCA1E65493300AB565D /* NightForKillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB32CC81E65493300AB565D /* NightForKillViewController.swift */; };
+		3FB32CCD1E65565900AB565D /* CorrectAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB32CCC1E65565900AB565D /* CorrectAlertController.swift */; };
+		3FC2FB8D1E5FFFE900B60B10 /* NightManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FB8C1E5FFFE900B60B10 /* NightManage.swift */; };
+		3FC2FB8F1E60092900B60B10 /* WolfMoveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FB8E1E60092900B60B10 /* WolfMoveController.swift */; };
+		3FC2FB911E60093500B60B10 /* SwitchMoveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FB901E60093500B60B10 /* SwitchMoveController.swift */; };
+		3FC2FB931E60094400B60B10 /* ProphetMoveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FB921E60094400B60B10 /* ProphetMoveController.swift */; };
+		3FC2FB951E60095200B60B10 /* HunterMoveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FB941E60095200B60B10 /* HunterMoveController.swift */; };
+		3FCB49C01E68FC48001C9D8C /* RoleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB49BF1E68FC48001C9D8C /* RoleImageViewController.swift */; };
+		3FD2BD061E68155C006262FD /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD2BD051E68155C006262FD /* CustomPresentationController.swift */; };
+		3FD2BD091E6817FF006262FD /* EasyAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD2BD081E6817FF006262FD /* EasyAnimator.swift */; };
+		3FD2BD0B1E681BEC006262FD /* 白狼王.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD2BD0A1E681BEC006262FD /* 白狼王.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F1C95F61E5AD126001DB5E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1C95D91E5AD126001DB5E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1C95E01E5AD126001DB5E2;
+			remoteInfo = DayDayWolfmanKill;
+		};
+		3F1C96011E5AD126001DB5E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1C95D91E5AD126001DB5E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1C95E01E5AD126001DB5E2;
+			remoteInfo = DayDayWolfmanKill;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F1C95E11E5AD126001DB5E2 /* DayDayWolfmanKill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayDayWolfmanKill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1C95E41E5AD126001DB5E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F1C95E61E5AD126001DB5E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F1C95E91E5AD126001DB5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F1C95EB1E5AD126001DB5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F1C95EE1E5AD126001DB5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F1C95F01E5AD126001DB5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1C95F51E5AD126001DB5E2 /* DayDayWolfmanKillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayDayWolfmanKillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1C95F91E5AD126001DB5E2 /* DayDayWolfmanKillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDayWolfmanKillTests.swift; sourceTree = "<group>"; };
+		3F1C95FB1E5AD126001DB5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1C96001E5AD126001DB5E2 /* DayDayWolfmanKillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayDayWolfmanKillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1C96041E5AD126001DB5E2 /* DayDayWolfmanKillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDayWolfmanKillUITests.swift; sourceTree = "<group>"; };
+		3F1C96061E5AD126001DB5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1C96131E5AD1BF001DB5E2 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		3F2848DB1E5D1E9E00F6917E /* 猎人.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "猎人.jpeg"; sourceTree = "<group>"; };
+		3F2848DC1E5D1E9E00F6917E /* 女巫.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "女巫.jpeg"; sourceTree = "<group>"; };
+		3F2848DD1E5D1E9E00F6917E /* 平民.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "平民.jpeg"; sourceTree = "<group>"; };
+		3F2848DE1E5D1E9E00F6917E /* 守卫.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "守卫.jpeg"; sourceTree = "<group>"; };
+		3F2848DF1E5D1E9E00F6917E /* 预言家.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "预言家.jpeg"; sourceTree = "<group>"; };
+		3F2848E51E5D609100F6917E /* 卡背.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "卡背.png"; sourceTree = "<group>"; };
+		3F2848E91E5D620000F6917E /* RolePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = RolePlist.plist; path = ../DayDayWolfmanKill/RolePlist.plist; sourceTree = "<group>"; };
+		3F2848EB1E5D6A6500F6917E /* RoleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleConfiguration.swift; sourceTree = "<group>"; };
+		3F2848ED1E5D724500F6917E /* 狼人.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "狼人.jpeg"; sourceTree = "<group>"; };
+		3FB32CC31E650D8100AB565D /* 红叉.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "红叉.jpeg"; sourceTree = "<group>"; };
+		3FB32CC71E65493300AB565D /* GameStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
+		3FB32CC81E65493300AB565D /* NightForKillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightForKillViewController.swift; sourceTree = "<group>"; };
+		3FB32CCC1E65565900AB565D /* CorrectAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectAlertController.swift; sourceTree = "<group>"; };
+		3FC2FB8C1E5FFFE900B60B10 /* NightManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightManage.swift; sourceTree = "<group>"; };
+		3FC2FB8E1E60092900B60B10 /* WolfMoveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfMoveController.swift; sourceTree = "<group>"; };
+		3FC2FB901E60093500B60B10 /* SwitchMoveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchMoveController.swift; sourceTree = "<group>"; };
+		3FC2FB921E60094400B60B10 /* ProphetMoveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProphetMoveController.swift; sourceTree = "<group>"; };
+		3FC2FB941E60095200B60B10 /* HunterMoveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HunterMoveController.swift; sourceTree = "<group>"; };
+		3FCB49BF1E68FC48001C9D8C /* RoleImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleImageViewController.swift; sourceTree = "<group>"; };
+		3FD2BD051E68155C006262FD /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		3FD2BD081E6817FF006262FD /* EasyAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyAnimator.swift; sourceTree = "<group>"; };
+		3FD2BD0A1E681BEC006262FD /* 白狼王.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "白狼王.jpeg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F1C95DE1E5AD126001DB5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C95F21E5AD126001DB5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C95FD1E5AD126001DB5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1C95D81E5AD126001DB5E2 = {
+			isa = PBXGroup;
+			children = (
+				3F1C96121E5AD1BF001DB5E2 /* source */,
+				3F1C95E31E5AD126001DB5E2 /* DayDayWolfmanKill */,
+				3F1C95F81E5AD126001DB5E2 /* DayDayWolfmanKillTests */,
+				3F1C96031E5AD126001DB5E2 /* DayDayWolfmanKillUITests */,
+				3F1C95E21E5AD126001DB5E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F1C95E21E5AD126001DB5E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C95E11E5AD126001DB5E2 /* DayDayWolfmanKill.app */,
+				3F1C95F51E5AD126001DB5E2 /* DayDayWolfmanKillTests.xctest */,
+				3F1C96001E5AD126001DB5E2 /* DayDayWolfmanKillUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F1C95E31E5AD126001DB5E2 /* DayDayWolfmanKill */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C95E41E5AD126001DB5E2 /* AppDelegate.swift */,
+				3FC2FB891E5FDD8000B60B10 /* Manage */,
+				3FB32CCB1E65561E00AB565D /* Class */,
+				3FD2BD071E6817C7006262FD /* Transition */,
+				3F1C95E61E5AD126001DB5E2 /* ViewController.swift */,
+				3FB32CC71E65493300AB565D /* GameStartViewController.swift */,
+				3FCB49BF1E68FC48001C9D8C /* RoleImageViewController.swift */,
+				3FB32CC81E65493300AB565D /* NightForKillViewController.swift */,
+				3FC2FB8E1E60092900B60B10 /* WolfMoveController.swift */,
+				3FC2FB901E60093500B60B10 /* SwitchMoveController.swift */,
+				3FC2FB921E60094400B60B10 /* ProphetMoveController.swift */,
+				3FC2FB941E60095200B60B10 /* HunterMoveController.swift */,
+				3F1C95E81E5AD126001DB5E2 /* Main.storyboard */,
+				3F1C95EB1E5AD126001DB5E2 /* Assets.xcassets */,
+				3F1C95ED1E5AD126001DB5E2 /* LaunchScreen.storyboard */,
+				3F1C95F01E5AD126001DB5E2 /* Info.plist */,
+			);
+			path = DayDayWolfmanKill;
+			sourceTree = "<group>";
+		};
+		3F1C95F81E5AD126001DB5E2 /* DayDayWolfmanKillTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C95F91E5AD126001DB5E2 /* DayDayWolfmanKillTests.swift */,
+				3F1C95FB1E5AD126001DB5E2 /* Info.plist */,
+			);
+			path = DayDayWolfmanKillTests;
+			sourceTree = "<group>";
+		};
+		3F1C96031E5AD126001DB5E2 /* DayDayWolfmanKillUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C96041E5AD126001DB5E2 /* DayDayWolfmanKillUITests.swift */,
+				3F1C96061E5AD126001DB5E2 /* Info.plist */,
+			);
+			path = DayDayWolfmanKillUITests;
+			sourceTree = "<group>";
+		};
+		3F1C96121E5AD1BF001DB5E2 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				3FD2BD0A1E681BEC006262FD /* 白狼王.jpeg */,
+				3FB32CC31E650D8100AB565D /* 红叉.jpeg */,
+				3F2848ED1E5D724500F6917E /* 狼人.jpeg */,
+				3F2848E51E5D609100F6917E /* 卡背.png */,
+				3F2848DB1E5D1E9E00F6917E /* 猎人.jpeg */,
+				3F2848DC1E5D1E9E00F6917E /* 女巫.jpeg */,
+				3F2848DD1E5D1E9E00F6917E /* 平民.jpeg */,
+				3F2848DE1E5D1E9E00F6917E /* 守卫.jpeg */,
+				3F2848DF1E5D1E9E00F6917E /* 预言家.jpeg */,
+				3F1C96131E5AD1BF001DB5E2 /* timg.jpeg */,
+				3F2848E91E5D620000F6917E /* RolePlist.plist */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		3FB32CCB1E65561E00AB565D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3FB32CCC1E65565900AB565D /* CorrectAlertController.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		3FC2FB891E5FDD8000B60B10 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				3F2848EB1E5D6A6500F6917E /* RoleConfiguration.swift */,
+				3FC2FB8C1E5FFFE900B60B10 /* NightManage.swift */,
+			);
+			name = Manage;
+			sourceTree = "<group>";
+		};
+		3FD2BD071E6817C7006262FD /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				3FD2BD051E68155C006262FD /* CustomPresentationController.swift */,
+				3FD2BD081E6817FF006262FD /* EasyAnimator.swift */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F1C95E01E5AD126001DB5E2 /* DayDayWolfmanKill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1C96091E5AD126001DB5E2 /* Build configuration list for PBXNativeTarget "DayDayWolfmanKill" */;
+			buildPhases = (
+				3F1C95DD1E5AD126001DB5E2 /* Sources */,
+				3F1C95DE1E5AD126001DB5E2 /* Frameworks */,
+				3F1C95DF1E5AD126001DB5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayDayWolfmanKill;
+			productName = DayDayWolfmanKill;
+			productReference = 3F1C95E11E5AD126001DB5E2 /* DayDayWolfmanKill.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F1C95F41E5AD126001DB5E2 /* DayDayWolfmanKillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1C960C1E5AD126001DB5E2 /* Build configuration list for PBXNativeTarget "DayDayWolfmanKillTests" */;
+			buildPhases = (
+				3F1C95F11E5AD126001DB5E2 /* Sources */,
+				3F1C95F21E5AD126001DB5E2 /* Frameworks */,
+				3F1C95F31E5AD126001DB5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1C95F71E5AD126001DB5E2 /* PBXTargetDependency */,
+			);
+			name = DayDayWolfmanKillTests;
+			productName = DayDayWolfmanKillTests;
+			productReference = 3F1C95F51E5AD126001DB5E2 /* DayDayWolfmanKillTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F1C95FF1E5AD126001DB5E2 /* DayDayWolfmanKillUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1C960F1E5AD126001DB5E2 /* Build configuration list for PBXNativeTarget "DayDayWolfmanKillUITests" */;
+			buildPhases = (
+				3F1C95FC1E5AD126001DB5E2 /* Sources */,
+				3F1C95FD1E5AD126001DB5E2 /* Frameworks */,
+				3F1C95FE1E5AD126001DB5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1C96021E5AD126001DB5E2 /* PBXTargetDependency */,
+			);
+			name = DayDayWolfmanKillUITests;
+			productName = DayDayWolfmanKillUITests;
+			productReference = 3F1C96001E5AD126001DB5E2 /* DayDayWolfmanKillUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F1C95D91E5AD126001DB5E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = yyj;
+				TargetAttributes = {
+					3F1C95E01E5AD126001DB5E2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TW8N4GDDEL;
+						ProvisioningStyle = Automatic;
+					};
+					3F1C95F41E5AD126001DB5E2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F1C95E01E5AD126001DB5E2;
+					};
+					3F1C95FF1E5AD126001DB5E2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F1C95E01E5AD126001DB5E2;
+					};
+				};
+			};
+			buildConfigurationList = 3F1C95DC1E5AD126001DB5E2 /* Build configuration list for PBXProject "DayDayWolfmanKill" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F1C95D81E5AD126001DB5E2;
+			productRefGroup = 3F1C95E21E5AD126001DB5E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F1C95E01E5AD126001DB5E2 /* DayDayWolfmanKill */,
+				3F1C95F41E5AD126001DB5E2 /* DayDayWolfmanKillTests */,
+				3F1C95FF1E5AD126001DB5E2 /* DayDayWolfmanKillUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F1C95DF1E5AD126001DB5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2848E31E5D1E9E00F6917E /* 守卫.jpeg in Resources */,
+				3F2848E11E5D1E9E00F6917E /* 女巫.jpeg in Resources */,
+				3F1C95EF1E5AD126001DB5E2 /* LaunchScreen.storyboard in Resources */,
+				3F2848E41E5D1E9E00F6917E /* 预言家.jpeg in Resources */,
+				3F1C95EC1E5AD126001DB5E2 /* Assets.xcassets in Resources */,
+				3F2848E01E5D1E9E00F6917E /* 猎人.jpeg in Resources */,
+				3FD2BD0B1E681BEC006262FD /* 白狼王.jpeg in Resources */,
+				3F1C96141E5AD1BF001DB5E2 /* timg.jpeg in Resources */,
+				3F2848E61E5D609100F6917E /* 卡背.png in Resources */,
+				3F1C95EA1E5AD126001DB5E2 /* Main.storyboard in Resources */,
+				3F2848EE1E5D724500F6917E /* 狼人.jpeg in Resources */,
+				3F2848E21E5D1E9E00F6917E /* 平民.jpeg in Resources */,
+				3FB32CC41E650D8100AB565D /* 红叉.jpeg in Resources */,
+				3F2848EA1E5D620000F6917E /* RolePlist.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C95F31E5AD126001DB5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C95FE1E5AD126001DB5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F1C95DD1E5AD126001DB5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB32CCA1E65493300AB565D /* NightForKillViewController.swift in Sources */,
+				3FC2FB8D1E5FFFE900B60B10 /* NightManage.swift in Sources */,
+				3FD2BD061E68155C006262FD /* CustomPresentationController.swift in Sources */,
+				3FD2BD091E6817FF006262FD /* EasyAnimator.swift in Sources */,
+				3FC2FB931E60094400B60B10 /* ProphetMoveController.swift in Sources */,
+				3FC2FB911E60093500B60B10 /* SwitchMoveController.swift in Sources */,
+				3FC2FB951E60095200B60B10 /* HunterMoveController.swift in Sources */,
+				3FB32CCD1E65565900AB565D /* CorrectAlertController.swift in Sources */,
+				3FCB49C01E68FC48001C9D8C /* RoleImageViewController.swift in Sources */,
+				3F2848EC1E5D6A6500F6917E /* RoleConfiguration.swift in Sources */,
+				3F1C95E71E5AD126001DB5E2 /* ViewController.swift in Sources */,
+				3FB32CC91E65493300AB565D /* GameStartViewController.swift in Sources */,
+				3FC2FB8F1E60092900B60B10 /* WolfMoveController.swift in Sources */,
+				3F1C95E51E5AD126001DB5E2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C95F11E5AD126001DB5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1C95FA1E5AD126001DB5E2 /* DayDayWolfmanKillTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C95FC1E5AD126001DB5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1C96051E5AD126001DB5E2 /* DayDayWolfmanKillUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F1C95F71E5AD126001DB5E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1C95E01E5AD126001DB5E2 /* DayDayWolfmanKill */;
+			targetProxy = 3F1C95F61E5AD126001DB5E2 /* PBXContainerItemProxy */;
+		};
+		3F1C96021E5AD126001DB5E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1C95E01E5AD126001DB5E2 /* DayDayWolfmanKill */;
+			targetProxy = 3F1C96011E5AD126001DB5E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F1C95E81E5AD126001DB5E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1C95E91E5AD126001DB5E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F1C95ED1E5AD126001DB5E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1C95EE1E5AD126001DB5E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F1C96071E5AD126001DB5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F1C96081E5AD126001DB5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F1C960A1E5AD126001DB5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TW8N4GDDEL;
+				INFOPLIST_FILE = DayDayWolfmanKill/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = centit.com.DayDayWolfmanKill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F1C960B1E5AD126001DB5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TW8N4GDDEL;
+				INFOPLIST_FILE = DayDayWolfmanKill/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = centit.com.DayDayWolfmanKill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3F1C960D1E5AD126001DB5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DayDayWolfmanKillTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = centit.com.DayDayWolfmanKillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayDayWolfmanKill.app/DayDayWolfmanKill";
+			};
+			name = Debug;
+		};
+		3F1C960E1E5AD126001DB5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DayDayWolfmanKillTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = centit.com.DayDayWolfmanKillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayDayWolfmanKill.app/DayDayWolfmanKill";
+			};
+			name = Release;
+		};
+		3F1C96101E5AD126001DB5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DayDayWolfmanKillUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = centit.com.DayDayWolfmanKillUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DayDayWolfmanKill;
+			};
+			name = Debug;
+		};
+		3F1C96111E5AD126001DB5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DayDayWolfmanKillUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = centit.com.DayDayWolfmanKillUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DayDayWolfmanKill;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F1C95DC1E5AD126001DB5E2 /* Build configuration list for PBXProject "DayDayWolfmanKill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1C96071E5AD126001DB5E2 /* Debug */,
+				3F1C96081E5AD126001DB5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1C96091E5AD126001DB5E2 /* Build configuration list for PBXNativeTarget "DayDayWolfmanKill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1C960A1E5AD126001DB5E2 /* Debug */,
+				3F1C960B1E5AD126001DB5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1C960C1E5AD126001DB5E2 /* Build configuration list for PBXNativeTarget "DayDayWolfmanKillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1C960D1E5AD126001DB5E2 /* Debug */,
+				3F1C960E1E5AD126001DB5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1C960F1E5AD126001DB5E2 /* Build configuration list for PBXNativeTarget "DayDayWolfmanKillUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1C96101E5AD126001DB5E2 /* Debug */,
+				3F1C96111E5AD126001DB5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F1C95D91E5AD126001DB5E2 /* Project object */;
+}
